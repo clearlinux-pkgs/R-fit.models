@@ -4,7 +4,7 @@
 #
 Name     : R-fit.models
 Version  : 0.5.14
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/fit.models_0.5-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fit.models_0.5-14.tar.gz
 Summary  : Compare Fitted Models
