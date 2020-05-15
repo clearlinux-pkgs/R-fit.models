@@ -4,7 +4,7 @@
 #
 Name     : R-fit.models
 Version  : 0.5.14
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/fit.models_0.5-14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/fit.models_0.5-14.tar.gz
 Summary  : Compare Fitted Models
@@ -21,21 +21,22 @@ print, summary, plot, etc.) were originally provided in the robust package to
 
 %prep
 %setup -q -c -n fit.models
+cd %{_builddir}/fit.models
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578177367
+export SOURCE_DATE_EPOCH=1589533465
 
 %install
-export SOURCE_DATE_EPOCH=1578177367
+export SOURCE_DATE_EPOCH=1589533465
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
